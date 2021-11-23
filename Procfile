@@ -1,1 +1,1 @@
-web : gunicorn sstream.wsgi --log-file -
+web: unicorn sstream.wsgi --log-file -
