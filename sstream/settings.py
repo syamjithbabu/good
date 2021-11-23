@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -120,9 +121,15 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+<<<<<<< HEAD
 # STATICFILES_DIRS =[
 #     os.path.join(BASE_DIR, 'static')
 # ]
+=======
+STATICFILES_DIRS =[
+    os.path.join(BASE_DIR,"static")
+]
+>>>>>>> 7627fdf95a3a0299a67140546ee150c7378c3165
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
