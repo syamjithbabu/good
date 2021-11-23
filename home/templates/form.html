@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration form</h1>
+    <table>
+        <form method="post">
+            <tr>
+                <td><input type="text" name="txt" placeholder="Firstname" style='width: 302.36px; height: 38px;' />&nbsp; &nbsp;&nbsp; <input type="text" name="txt" placeholder="Lastname" style='width: 302.36px; height: 38px;' /></td>
+                
+            </tr> 
+            <tr>
+                <td><input type="email" name="email" placeholder="Email address" style='width: 377.9px; height: 38px;' /></td>
+            </tr> 
+            <tr>
+                <td><input type="password" name="txt" placeholder="Password" style='width: 264px; height: 38px;' /></td>
+            </tr> 
+            <tr>
+                <td><input type="submit" value="Sign up" style='width: 150px; height: 30px;'></td>
+            </tr>
+            <tr>
+                <td> <b>Already have an account? <a href="{% url 'home:help' %}">Signin</a></b></td>
+            </tr>
+        </form>
+    </table>
+</body>
+</body>
+</html>
